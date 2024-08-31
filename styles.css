@@ -143,3 +143,69 @@ main {
     font-weight: bold;
     color: #ff6f61;
 }
+
+.services, .about-us, .gallery {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.services h2, .about-us h2, .gallery h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.gallery-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.gallery p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
