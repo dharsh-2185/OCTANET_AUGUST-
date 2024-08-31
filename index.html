@@ -3,65 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodio - Food Restaurant Website</title>
+    <title>Stylish To-Do List</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Foodio</div>
-        <nav>
-            <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </nav>
-        <div class="auth-buttons">
-            <button class="sign-in">Sign In</button>
-            <button class="sign-up">Sign Up</button>
+    <div class="todo-container">
+        <h1>My To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task..." />
+            <button onclick="addTask()">+</button>
         </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Order Your Best Food Anytime</h1>
-                <p>Hey, Our delicious food is waiting for you. We are always here to serve you with fresh farm food.</p>
-                <button class="order-now">Order Now</button>
-            </div>
-            <div class="hero-image">
-                <img src="chicken-dish.jpeg" alt="Chicken Dish">
-            </div>
-        </section>
-        <section class="popular-dishes">
-            <h2>Popular Dishes</h2>
-            <div class="dishes">
-                <div class="dish">
-                    <img src="beep-burger.jpeg" alt="Beef Burger">
-                    <h3>Beef Burger</h3>
-                    <p>Juicy delicious beef burger topped with fresh lettuce and tomatoes.</p>
-                    <p class="price">$10.99</p>
-                </div>
-                <div class="dish">
-                    <img src="french-fries.jpeg" alt="French Fries">
-                    <h3>French Fries</h3>
-                    <p>Golden crispy fries seasoned with a perfect blend of spices.</p>
-                    <p class="price">$11.99</p>
-                </div>
-                <div class="dish">
-                    <img src="chicken.jpg" alt="Chicken">
-                    <h3>Chicken</h3>
-                    <p>Succulent grilled chicken, cooked to perfection with our special blend of spices.</p>
-                    <p class="price">$12.99</p>
-                </div>
-                <div class="dish">
-                    <img src="fried chicken.jpeg" alt="Fried Chicken">
-                    <h3>Fried Chicken</h3>
-                    <p>Crunchy fried chicken, seasoned and cooked to a golden brown.</p>
-                    <p class="price">$13.99</p>
-                </div>
-            </div>
-        </section>
-    </main>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
